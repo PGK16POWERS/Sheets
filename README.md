@@ -1,2 +1,3 @@
 # Sheets
-Floating sheet in web
+
+Manual gesture tracking using pointer delta.
