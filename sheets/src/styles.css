@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 10;
+}
+
+.sheet {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: 40vh;
+  background: white;
+  border-radius: 20px 20px 0 0;
+
+  transform: translateY(20vh); /* IMPORTANT */
+  transition: transform 0.3s ease;
+
+  touch-action: none;
+  will-change: transform;
+  z-index: 100;
+  padding: 10px 20px;
+}
+
+.handle {
+  width: 40px;
+  height: 5px;
+  background: #ccc;
+  border-radius: 5px;
+  margin: 0 auto 15px;
+  cursor: grab;
+}
